@@ -20,7 +20,7 @@ class Main {
     System.out.println("\\Java Code\\");
     
     // print the name Joe tabbed once
-    System.out.println("/tJoe"))
+    System.out.println("/tJoe");
 
     // print the name Mary tabbed twice
     System.out.println("/t/tMary");
