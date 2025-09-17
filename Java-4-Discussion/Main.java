@@ -10,7 +10,7 @@ class Main {
     // Number of cars
        int numOfcars = 20;
     // Investment amount in currency
-      float investmntAmt = 200.50;
+      double investmntAmt = 200.50;
     // Person's first name
       String fName= "Mary";
     // Is a game over?
