@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Create a website layout that has two pages: a HOME page and a SONGS page. 
+Structure your Home page based on the picture file HomePage.png and your Songs page like SongsPage.png. 
+Be sure to include the city flags (see the "cities" folder).
+You may choose the content in your info cards -->
+
+<html>
+  <head>
+    <title>54-CW: Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="customers.js"></script>
+  </head>
+  
+  <body onload="init()">
+    <div >
+      <!--  Header or Banner -->
+      <div id="header">
+        <h1> Lesson 54 ACTIVITY </h1>
+      </div>
+      
+        <nav id='nav' class = "fat">
+          <H2>Navigation - HomePage</H2><br> 
+          <a href = "index.html" class = "button">HOME</a>
+          <a href = "customers.html" class = "button">CUSTOMERS</a>
+          <a href = "employees.html" class = "button">EMPLOYEES</a>
+          <a href = "song.html" class = "button">SONGS</a>
+        </nav>
+      
+
+      <div class="container">
+        <!--  nav bar -->
+        
+        <div class = "sidePanel">
+          <h4> Left Panel</h4>
+          <p> Search for customers by country</p>
+         <div class='searchpanel'>
+          <input type = "text" placeholder = "Enter country" id = "Country">
+          <input type = "button" value = "Search" onClick = generateCards()>
+         </div> 
+        </div>
+
+        <div id='mainpanel' class="container">
+          
+        </div>
+
+        <div class = "sidePanel">
+          <h4> Right Panel</h4>
+        </div>
+      </div>
+
+      <div id='footer'>
+        <h3> Footer </h3>
+      </div>
+
+    </div>
+    
+  </body>
+</html>
