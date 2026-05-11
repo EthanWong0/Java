@@ -8,32 +8,43 @@ You may choose the content in your info cards -->
   <head>
     <title>54-CW: Home</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="script.js"></script>
+    <script src="components.js"></script>
   </head>
   
   <body onload="init()">
     <div >
       <!--  Header or Banner -->
       <div id="header">
-        <h1> Lesson 54 CW </h1>
+        <h1> Lesson 54 ACTIVITY </h1>
       </div>
       
-      <div class='searchpanel'>
+        <nav id='nav' class = "fat">
+          <H2>Navigation - HomePage</H2><br> 
+          <a href = "index.html" class = "button">HOME</a>
+          <a href = "books.html" class = "button">Books</a>
+          <a href = "borrowedbook.html" class = "button">BorrowedBooks</a>
+          <a href = "members.html" class = "button">Members</a>
+        </nav>
+      <!--<div class='searchpanel'>
           Search Panel
           <input type = "text" placeholder = "Enter City" id = "City">
           <input type = "button" value = "Search" onClick = generateCards()>
-      </div>
+      </div> -->
 
       <div class="container">
         <!--  nav bar -->
-        <nav id='nav'>
-          <H2>NAV</H2><br> 
-          <a href = "index.html" class = "button">HOME</a>
-          <a href = "song.html" class = "button">SONGS</a>
-        </nav>
         
+        <div class = "sidePanel">
+          <h4> Left Panel</h4>
+        </div>
+
         <div id='mainpanel' class="container">
-          Main Panel
+          <h5>Center Panel</h5>
+          <h3>This webpage will allow you to browse the Library database. There are three pages which you can search for books, borrowed books and members</h3>
+        </div>
+
+        <div class = "sidePanel">
+          <h4> Right Panel</h4>
         </div>
       </div>
 
