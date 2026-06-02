@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Database Project: Customers </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="components.css" rel="stylesheet" type ="text/css"
+    <!-- import JS file -->
+    <script src="customers.js"></script>
+    <script src="components.js"></script>
+
+  </head>
+  
+  <!-- Call the int function when website loads -->
+  <body onload="init()">
+      <!--  Header or Banner -->
+      <div id="header">
+        <h1> Database Project - Customers</h1>
+      </div>
+
+      <!--  nav bar -->
+      <nav id='nav'>
+        <h2> Navigation - Customers </h2>
+            <a href="index.html" class="button">HOME</a>   
+            <a href="cars.html" class="button">CARS</a> 
+            <a href="customers.html" class="button">CUSTOMERS</a>
+      </nav>
+      
+      <!--  Main content (has 3 panels) -->
+      <div class="container">
+        
+        <div class='panel'>
+          <div class="container filter">
+            <div>          
+              Left Panel
+              <h4> Search by country</h4>
+              <input style="flex:2;text-align:right;" type="text" 
+                id="country" placeholder="Enter country" >        
+              <a class="button" onclick="filter()"> Search </a><br>
+              <h4 id="count"></h4>
+            </div>
+          </div>
+        </div>
+        
+        <div id='centerpanel' class='container'>
+          
+        </div>
+        
+        <div class='panel'>
+          <div class="container filter">
+            <div>          
+              Right Panel
+              <h4> Search by dealership </h4>
+              <input style="flex:2;text-align:right;" type="text" 
+                id="dealershipName" placeholder="Enter dealership" >        
+              <a class="button" onclick="filterByDealership()"> Search </a><br>
+              <h4 id="count"></h4>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!--  Footer -->
+      <div id='foot'>
+        <h3> Footer </h3>
+      </div>
+
+    
+    
+  </body>
+</html>
