@@ -21,8 +21,7 @@ function generateCards(cars){
     let car = cars[i];
     cardCount ++;
    front = `<div class="card" >`
-    front += `<h3> Car ID </h3>`;
-    front += `<p> ${car.CarID}</p>`;
+    front += `<h3> Car ID: ${car.CarID} </h3>`;
     front += `<div> Model </div>`;
     front += `<div2> ${car.Model} </div2>`;
     front += `<div> Value </div>`;
@@ -33,8 +32,7 @@ function generateCards(cars){
    front += `</div>`;
 
    back = `<div class = "card">`;
-    back += `<h3> Dealership ID </h3>`;
-    back += `<p> ${car.DealershipID}</p>`;
+    back += `<h3> Dealership ID: ${car.DealershipID} </h3>`;
     back += `<div> Name </div>`;
     back += `<div2> ${car.Name}</div2>`;
     back += `<div> Country </div>`;

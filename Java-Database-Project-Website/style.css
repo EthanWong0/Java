@@ -50,11 +50,12 @@ div{
   /*flex:1;   THIS SQUISHES */
   /*flex-basis:150px   */
   width:450px;
+  height:275px;
   margin:5px;
   padding:5px;
   border:1px solid black;
   text-align:center;
-  background-color:#dedfe7;
+  background-color:#adcbda;
 }
 /* target all h4 elements*/
 h4{

@@ -30,9 +30,8 @@ function generateCards(customers){
     front += `</div>`;
 
     back = `<div class = "card">`;
-     if(customer.CarID != null){ 
-     back += `<h3> Car ID </h3>`;
-     back += `<p> ${customer.CarID} </p>`;
+     if(customer.CarID){ 
+     back += `<h3> Car ID: ${customer.CarID} </h3>`;
      back += `<div> Model </div>`;
      back += `<div2> ${customer.Model}`;
      back += `<div> Loaned From: </div>`;
