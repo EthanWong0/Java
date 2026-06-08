@@ -30,7 +30,7 @@ class Main {
   void init() throws IOException{   
 
     // Create a port - this is your Gateway
-    int port = 8550;
+    int port = 8552;
 
     // Create the HTTPserver object
     HttpServer server = HttpServer.create(new InetSocketAddress(port),0);
@@ -57,8 +57,8 @@ class Main {
 
     // Customer route
     sql = " SELECT cars.CarID, cars.Model,customers.customerID, customers.FirstName, customers.LastName, customers.Country, dealership.Name FROM customers";
-    sql += " INNER JOIN cars ON cars.CarID = customers.CarID";
-    sql += " INNER JOIN dealership ON cars.CarID = dealership.CarID";
+    sql += " LEFT JOIN cars ON cars.CarID = customers.CarID";
+    sql += " LEFT JOIN dealership ON cars.CarID = dealership.CarID";
     server.createContext("/customers", new RouteHandler(db,sql));
     
     // Start the server      
